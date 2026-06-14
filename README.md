@@ -1,20 +1,27 @@
-# Exodus Launcher
+<h1 align="center">🍄 Exodus Launcher</h1>
 
-A modern auto-patching launcher for the Exodus MapleStory v83 server, in the
-**classic MapleStory look** — warm orange over deep ocean blue.
+<p align="center">
+  A modern <b>auto-patching launcher</b> for the Exodus MapleStory v83 server —<br/>
+  classic Maple look, warm orange over deep ocean blue.
+</p>
 
-![screenshot](screenshot_v2.png)
+<p align="center"><img src="docs/hero.png" width="860" alt="Exodus Launcher main window"></p>
 
-## What it does
+## ✨ Features
 
-| Feature | Detail |
-|---|---|
-| **Auto-patcher** | Fetches a manifest, SHA-256–compares every file against the local install, downloads **only what changed**, verifies each download, then launches the game. |
-| **Smart cache** | `patchcache.json` keyed by (size, mtime) lets repeat launches skip re-hashing unchanged files, so checks are near-instant after the first run. |
-| **Server status** | Polls a `status.json` and shows ONLINE/OFFLINE, **uptime**, and players online (no per-channel clutter). |
-| **News + Patch Notes** | Two tabs, each from its own feed (`news.json`, `patchnotes.json`). |
-| **In-launcher settings** | GUI editor for the game's `config.ini` (resolution, windowed, skip-fade, skip-maker, lightbulbs, WASD, Windows key) — comment-and-order preserving. |
-| **MapleStory flavor** | Cute Maple mob sprites (Orange Mushroom, Slime, Snail) pulled from `maplestory.io`, in the classic orange-on-ocean-blue look. |
+- 🔄 **Auto-patcher** — fetches a manifest, SHA-256–compares every file against the local install, downloads **only what changed**, verifies each download, then launches the game.
+- ⚡ **Smart cache** — `patchcache.json` keyed by (size, mtime) skips re-hashing unchanged files, so checks are near-instant after the first run.
+- 🟢 **Server status + uptime** — shows ONLINE/OFFLINE, uptime, and players online (no per-channel clutter).
+- 📰 **News + Patch Notes** — two tabs, each from its own feed.
+- ⚙️ **In-launcher settings** — a GUI for `config.ini` (resolution, windowed, skip-fade, skip-Maker, lightbulbs, WASD, Windows key), comment-and-order preserving.
+- 🐌 **MapleStory flavor** — cute Maple mob sprites in the original Maple colors.
+
+<table>
+  <tr>
+    <td align="center"><b>Patch Notes</b><br/><img src="docs/patch-notes.png" width="420" alt="Patch Notes tab"></td>
+    <td align="center"><b>In-launcher settings</b><br/><img src="docs/settings.png" width="420" alt="Game settings dialog"></td>
+  </tr>
+</table>
 
 Zero external NuGet dependencies — `System.Text.Json` and SHA-256 ship with .NET 8.
 
