@@ -5,7 +5,7 @@
   classic Maple look, warm orange over deep ocean blue.
 </p>
 
-<p align="center"><img src="docs/hero.png" width="860" alt="Exodus Launcher main window"></p>
+<p align="center"><img src="docs/demo.gif" width="860" alt="Exodus Launcher demo"></p>
 
 ## ✨ Features
 
