@@ -1,0 +1,12 @@
+{
+  "//": "Exodus Launcher configuration. Point these at your real patch host + status API when ready.",
+  "manifest_url": "http://localhost:8777/manifest.json",
+  "status_url": "http://localhost:8777/status.json",
+  "news_url": "http://localhost:8777/news.json",
+  "patch_notes_url": "http://localhost:8777/patchnotes.json",
+  "game_exe": "Exodus.exe",
+  "game_args": "",
+  "game_dir": ".",
+  "discord_url": "https://discord.gg/exodus",
+  "forum_url": "https://exodusms.com/forums"
+}

@@ -1,0 +1,13 @@
+# build output
+bin/
+obj/
+*.user
+
+# launcher runtime artifacts
+patchcache.json
+*.part
+
+# generated patch payload (don't commit game files / large mirror)
+backend/dist/
+
+# keep: source, Assets/*.png sprites, backend scripts, stub JSON, README, screenshots

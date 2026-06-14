@@ -1,0 +1,59 @@
+<Window x:Class="ExodusLauncher.SettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Game Settings" Height="600" Width="470"
+        WindowStyle="None" AllowsTransparency="True" Background="Transparent"
+        ResizeMode="NoResize" WindowStartupLocation="CenterOwner"
+        FontFamily="Segoe UI" UseLayoutRounding="True" TextOptions.TextFormattingMode="Display">
+
+    <Border Margin="12" CornerRadius="16" Background="{StaticResource WindowGrad}"
+            BorderBrush="{StaticResource PanelStroke}" BorderThickness="1">
+        <Border.Effect>
+            <DropShadowEffect Color="#FF000000" BlurRadius="28" ShadowDepth="0" Opacity="0.6"/>
+        </Border.Effect>
+        <Grid Margin="24,18,24,20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" MouseLeftButtonDown="Drag">
+                <TextBlock Text="GAME SETTINGS" Foreground="{StaticResource TextPrimary}"
+                           FontSize="16" FontWeight="Bold"/>
+                <TextBlock x:Name="PathNote" Foreground="{StaticResource TextMuted}" FontSize="11"
+                           Margin="0,24,0,0" TextTrimming="CharacterEllipsis"/>
+            </Grid>
+
+            <StackPanel Grid.Row="1" Margin="0,18,0,0">
+                <TextBlock Text="DISPLAY" Foreground="{StaticResource TextMuted}" FontSize="11" FontWeight="Bold" Margin="0,0,0,8"/>
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,4">
+                    <TextBlock Text="Resolution" Foreground="{StaticResource TextPrimary}" FontSize="13" VerticalAlignment="Center" Width="150"/>
+                    <TextBox x:Name="WidthBox" Style="{StaticResource DialogText}" Width="70" TextAlignment="Center"/>
+                    <TextBlock Text="×" Foreground="{StaticResource TextMuted}" Margin="8,0" VerticalAlignment="Center"/>
+                    <TextBox x:Name="HeightBox" Style="{StaticResource DialogText}" Width="70" TextAlignment="Center"/>
+                </StackPanel>
+
+                <CheckBox x:Name="WindowedChk" Style="{StaticResource Toggle}" Content="Windowed mode"/>
+
+                <Border Height="1" Background="{StaticResource PanelStroke}" Margin="0,12"/>
+                <TextBlock Text="PERFORMANCE / QUALITY OF LIFE" Foreground="{StaticResource TextMuted}" FontSize="11" FontWeight="Bold" Margin="0,0,0,4"/>
+                <CheckBox x:Name="SkipFadeChk" Style="{StaticResource Toggle}" Content="Skip map fade (faster transitions)"/>
+                <CheckBox x:Name="SkipMakerChk" Style="{StaticResource Toggle}" Content="Skip Maker animation"/>
+                <CheckBox x:Name="LightbulbsChk" Style="{StaticResource Toggle}" Content="Disable quest light bulbs"/>
+
+                <Border Height="1" Background="{StaticResource PanelStroke}" Margin="0,12"/>
+                <TextBlock Text="CONTROLS" Foreground="{StaticResource TextMuted}" FontSize="11" FontWeight="Bold" Margin="0,0,0,4"/>
+                <CheckBox x:Name="WasdChk" Style="{StaticResource Toggle}" Content="Use WASD instead of arrow keys"/>
+                <CheckBox x:Name="WinKeyChk" Style="{StaticResource Toggle}" Content="Allow Windows key in-game"/>
+            </StackPanel>
+
+            <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,16,0,0">
+                <Button Content="Cancel" Style="{StaticResource GhostButton}" Click="Cancel_Click" Width="90"
+                        HorizontalContentAlignment="Center"/>
+                <Button x:Name="SaveBtn" Content="SAVE" Style="{StaticResource PlayButton}" FontSize="14"
+                        Width="110" Height="38" Margin="10,0,0,0" Click="Save_Click"/>
+            </StackPanel>
+        </Grid>
+    </Border>
+</Window>

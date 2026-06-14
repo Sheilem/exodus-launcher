@@ -1,0 +1,22 @@
+{
+  "items": [
+    {
+      "date": "2026-06-14",
+      "tag": "v1.0.5",
+      "title": "New Launcher & Auto-Patcher",
+      "body": "Switched to a manifest-based patcher — only changed files download now. Added in-launcher game settings and live server status."
+    },
+    {
+      "date": "2026-06-08",
+      "tag": "v1.0.4",
+      "title": "Class Balance Pass",
+      "body": "Adjusted several 4th-job skill ratios and fixed two boss HP desyncs. Full numbers in Discord."
+    },
+    {
+      "date": "2026-06-01",
+      "tag": "v1.0.3",
+      "title": "Stability & Drops",
+      "body": "Server-side drop table fixes for mid-game maps and a memory leak patch on channel hop."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "items": [
+    {
+      "date": "2026-06-13",
+      "tag": "EVENT",
+      "title": "Double EXP Weekend",
+      "body": "2x EXP across the whole server Friday 18:00 through Sunday midnight (server time). Stack it with holiday buffs for big gains."
+    },
+    {
+      "date": "2026-06-09",
+      "tag": "EVENT",
+      "title": "Boss Rush — Sign Up",
+      "body": "Weekend boss-rush event with cosmetic rewards. Grab a party and register through the NPC in the Free Market."
+    },
+    {
+      "date": "2026-06-04",
+      "tag": "NOTICE",
+      "title": "Welcome New Players",
+      "body": "New to Exodus? Hit the Discord for a starter guide, then jump in. See you in Henesys!"
+    }
+  ]
+}
